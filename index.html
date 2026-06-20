@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header>
+       <header>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>TaskFlow</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                🌙
+            </button>
+
+            <button id="menu-toggle" aria-label="Open Menu">
+                ☰
+            </button>
+        </div>
+    </nav>
+</header>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Manage Your Tasks Smarter with TaskFlow</h1>
+
+        <p>
+            Stay organized, collaborate with your team, and boost productivity
+            using our simple and powerful task management platform.
+        </p>
+
+        <a href="#pricing" class="btn">Get Started</a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMIK1jdAF1xcoBTSbBDYbMlxTwmXRaEf8bQckDL9gBdJMruxnEd1GOO0SxzQfzp7NN05aIAe9LEhVM74o3dAvrMZ30A6Mkfeh8RcCIQ&s=10"
+            alt="TaskFlow Dashboard"
+            loading="lazy"
+        >
+    </div>
+</section>
+
+        <section id="features" class="features">
+    <h2>Why Choose TaskFlow?</h2>
+    <p class="section-description">
+        Powerful features to help you stay productive and organized every day.
+    </p>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3>Task Management</h3>
+            <p>Create, organize, and track your tasks with ease.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Team Collaboration</h3>
+            <p>Work together with your team in real time.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>Smart Scheduling</h3>
+            <p>Plan deadlines and never miss important work.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Analytics</h3>
+            <p>Track productivity using insightful reports.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔔</div>
+            <h3>Notifications</h3>
+            <p>Receive reminders and instant updates.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure Storage</h3>
+            <p>Your data is protected with enterprise-grade security.</p>
+        </div>
+
+    </div>
+</section>
+
+        <section id="pricing" class="pricing">
+    <h2>Choose Your Plan</h2>
+    <p class="section-description">
+        Flexible pricing for individuals, teams, and enterprises.
+    </p>
+
+    <div class="pricing-grid">
+
+        <div class="pricing-card">
+            <h3>Starter</h3>
+            <h4>$9<span>/month</span></h4>
+
+            <ul>
+                <li>✔ Up to 5 Projects</li>
+                <li>✔ Basic Analytics</li>
+                <li>✔ Email Support</li>
+            </ul>
+
+            <button class="btn">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card recommended">
+            <span class="badge">Most Popular</span>
+
+            <h3>Professional</h3>
+            <h4>$29<span>/month</span></h4>
+
+            <ul>
+                <li>✔ Unlimited Projects</li>
+                <li>✔ Advanced Analytics</li>
+                <li>✔ Team Collaboration</li>
+                <li>✔ Priority Support</li>
+            </ul>
+
+            <button class="btn">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <h4>$99<span>/month</span></h4>
+
+            <ul>
+                <li>✔ Unlimited Everything</li>
+                <li>✔ Dedicated Manager</li>
+                <li>✔ Custom Integrations</li>
+                <li>✔ 24/7 Premium Support</li>
+            </ul>
+
+            <button class="btn">Choose Plan</button>
+        </div>
+
+    </div>
+</section>
+
+        <section id="blog" class="blog">
+    <h2>Latest Blog Posts</h2>
+
+    <p class="section-description">
+        Stay updated with our latest news and insights.
+    </p>
+
+    <div id="loading">
+        Loading blog posts...
+    </div>
+
+    <div id="error" style="display: none;">
+        Failed to load blog posts.
+    </div>
+
+    <div id="posts" class="blog-grid"></div>
+
+</section>
+        <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <p class="section-description">
+        Have questions? We'd love to hear from you.
+    </p>
+
+    <form id="contact-form">
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+            <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+            <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+            <small class="error"></small>
+        </div>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+    </form>
+</section>
+
+    </main>
+
+    <footer>
+    <p>&copy; 2026 TaskFlow. All Rights Reserved.</p>
+</footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
