@@ -1,3 +1,4 @@
+
 # Responsive Blog Webpage with API Integration
 
 ## Project Overview
@@ -25,9 +26,7 @@ This project is a responsive blog webpage built using HTML, CSS, and JavaScript.
 
 https://jsonplaceholder.typicode.com/posts
 
-## Project Structure
-
-```
+## Project Structre
 project-folder/
 │
 ├── index.html
@@ -36,7 +35,7 @@ project-folder/
 ├── js/
 │   └── app.js
 └── README.md
-```
+
 
 ## How to Run
 
